@@ -2,14 +2,14 @@ public class PiezaA implements Pieza{
     //PiezaA() {}
     @Override
     public int[][] creacion(char option) {
-        //piecita = {{1,0,0},{1,0,0},{1,1,1}};
+        int [][] piecitas = new int [LOG][LOG];
         for(int i = 0 ;i < 3 ; i++){
             for(int j = 0 ; j  < 3 ; j++){
                 if(j == 0 || j==1 && i == 2 || j==2 && i == 2){
-                    piecita[i][j] = 1;
+                    piecitas[i][j] = 1;
                 }
             }
         }
-        return piecita;
+        return piecitas;
     }
 }
