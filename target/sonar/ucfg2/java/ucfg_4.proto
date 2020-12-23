@@ -1,28 +1,50 @@
 
-finalexam.PiezaC#creacion(C)[[I~
-t/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/PiezaC.java ("4"1*Æ
-4~
-t/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/PiezaC.java
- 
-(†
-ù
-~
-t/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/PiezaC.java
- 
-(
-%0int[][]"__id*
-""*
-4
-1*±
-1~
-t/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/PiezaC.java (†
-ù
-~
-t/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/PiezaC.java (
-%1int[][]"__id*
-"""à
-~
-t/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/PiezaC.java (
+!Tablero#fijarPiezaEnTablero([[I)Zu
+k/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/Tablero.java (&"11*÷
+6u
+k/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/Tablero.java, (0—Œ
+u
+k/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/Tablero.java, (;	
+%3int"java.util.Random#nextInt(I)I*
+
+randjava.util.Random*22
+nextInt(I)*
+7
+1*Ÿ
+7u
+k/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/Tablero.java (—Œ
+u
+k/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/Tablero.java (#	
+%2int"java.util.Random#nextInt(I)I*
+
+randjava.util.Random*22
+nextInt(I)*	
+6
+7
+1*ö
+11u
+k/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/Tablero.java ("§°
+u
+k/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/Tablero.java ( 
+%0java.util.Random"java.util.Random∂
+≥
+u
+k/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/Tablero.java ("
+%1"java.util.Random#<init>()V*
+
+%0java.util.Random¥
+±
+u
+k/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/Tablero.java (#
+randjava.util.Random"__id*
+
+%0java.util.Random*
+7
+1*˚
+1u
+k/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/Tablero.java! !("
+u
+k/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/Tablero.java! !(
 "":
-""B
-finalexam.PiezaC
+""B	
+Tablero

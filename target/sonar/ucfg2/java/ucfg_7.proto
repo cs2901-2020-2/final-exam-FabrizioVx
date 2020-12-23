@@ -1,50 +1,25 @@
 
-+finalexam.Tablero#fijarPiezaEnTablero([[I)Z
-u/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/Tablero.java (&"11*Í
-6
-u/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/Tablero.java, (0€ÿ
-
-u/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/Tablero.java, (;	
-%3int"java.util.Random#nextInt(I)I*
-
-randjava.util.Random*22
-nextInt(I)*
-7
-1*Ì
-7
-u/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/Tablero.java (€ÿ
-
-u/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/Tablero.java (#	
-%2int"java.util.Random#nextInt(I)I*
-
-randjava.util.Random*22
-nextInt(I)*	
-6
-7
-1*¬
-11
-u/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/Tablero.java ("Æ´
-
-u/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/Tablero.java ( 
-%0java.util.Random"java.util.Random¿
-Ω
-
-u/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/Tablero.java ("
-%1"java.util.Random#<init>()V*
-
-%0java.util.Randomæ
-ª
-
-u/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/Tablero.java (#
-randjava.util.Random"__id*
-
-%0java.util.Random*
-7
-1*ê
-1
-u/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/Tablero.java" "("â
-
-u/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/finalexam/Tablero.java" "(
+PiezaE#creacion(C)[[It
+j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java ("4"1*ö
+4t
+j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java (ñ
+ì
+t
+j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java (
+%0int[][]"__id*
+""*
+4
+1*í
+1t
+j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java (ñ
+ì
+t
+j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java (
+%1int[][]"__id*
+"""~
+t
+j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java (
 "":
-""B
-finalexam.Tablero
+""B
+
+PiezaE

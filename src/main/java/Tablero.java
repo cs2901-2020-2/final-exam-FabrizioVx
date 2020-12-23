@@ -1,17 +1,21 @@
-package finalexam;
 //extends PiezaA,PiezaB,PiezaC,PiezaD,PiezaE,PiezaF,PiezaG,PiezaH
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class Tablero {
-    int alto,ancho;
     private static final int ALTO= 9;
     private static final int ANCHO = 9;
     private static final int LOG = 3;
-    ArrayList<int[][]> listaDePiezas = new ArrayList<int[][]>();
-    int [][]tablero = new int[alto][ancho];
+    ArrayList<int[][]> listaDePiezas = new ArrayList<>();
+    int [][]tablero = new int[ALTO][ANCHO];
     int[][] AuxPieza = new int [LOG][LOG];
+    static final Logger logger = Logger.getLogger(Tablero.class.getName());
+    private static final Scanner scan = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
+
     Pieza pieza;
 
     public boolean creacionTablero(){
@@ -32,6 +36,19 @@ public class Tablero {
             }
         }
         return true;
+    }
+
+    private void mostrarTablero(){
+        for(int i = 0 ;i < ALTO ; i++){
+            for(int j = 0 ; j  < ANCHO ; j++){
+                if(tablero[i][j] == 0){
+                    logger.info("X");
+                }else{
+                    logger.info(" ");
+                }
+            }
+            logger.info("\n");
+        }
     }
 
     boolean posicionar(char option) throws Exception {
@@ -56,5 +73,16 @@ public class Tablero {
             default:
                 throw new Exception("ERROR EN LA OPCION");
         }
+    }
+    public static void main(String[] args){
+        logger.info("Ingresa para jugar (digita 0) o juega de forma anónima ( digita 1)");
+        int opcion = scan.nextInt();
+        String nameUser = "";
+        if(opcion == 0) {
+            logger.info("Ingresa tu nombre de usuario: ");
+            nameUser = scan.nextLine();
+        }
+        else{ nameUser = "firstPlayer";}
+        logger.info("Acaba de ingresar" + nameUser +" felicidades");
     }
 }
