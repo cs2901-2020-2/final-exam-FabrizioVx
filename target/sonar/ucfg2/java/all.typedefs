@@ -15,28 +15,68 @@ getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
 notifyAll()java.lang.Object#notifyAll()V"
 wait()java.lang.Object#wait()V*
 
-hashCode()java.lang.Object#hashCode()I
-Piezajava.lang.Objecte
-PiezaFjava.lang.ObjectPieza
-<init>()PiezaF#<init>()V$
-creacion(C)PiezaF#creacion(C)[[Ie
-PiezaAjava.lang.ObjectPieza
-<init>()PiezaA#<init>()V$
-creacion(C)PiezaA#creacion(C)[[Ie
-PiezaGjava.lang.ObjectPieza
-<init>()PiezaG#<init>()V$
-creacion(C)PiezaG#creacion(C)[[Ie
-PiezaCjava.lang.ObjectPieza
-<init>()PiezaC#<init>()V$
-creacion(C)PiezaC#creacion(C)[[I√
-Tablerojava.lang.Object
-<init>()Tablero#<init>()V=
-fijarPiezaEnTablero([[I)!Tablero#fijarPiezaEnTablero([[I)Z/
-creacionTablero()Tablero#creacionTablero()V?
-main([Ljava/lang/String;)"Tablero#main([Ljava/lang/String;)V'
-posicionar(C)Tablero#posicionar(C)Z-
-mostrarTablero()Tablero#mostrarTablero()Z(
-java.io.Serializablejava.lang.Object‘
+hashCode()java.lang.Object#hashCode()I(
+java.io.Serializablejava.lang.Objectõ
+java.lang.Throwablejava.lang.Objectjava.io.Serializable;
+printStackTrace()&java.lang.Throwable#printStackTrace()V}
+2validateSuppressedExceptionsList(Ljava/util/List;)Gjava.lang.Throwable#validateSuppressedExceptionsList(Ljava/util/List;)I¡
+ìprintEnclosedStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;[Ljava/lang/StackTraceElement;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)®java.lang.Throwable#printEnclosedStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;[Ljava/lang/StackTraceElement;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)Vw
+/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.lang.Throwable#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VB
+getMessage()2java.lang.Throwable#getMessage()Ljava/lang/String;W
+setCause(Ljava/lang/Throwable;)4java.lang.Throwable#setCause(Ljava/lang/Throwable;)V)
+<init>()java.lang.Throwable#<init>()Vg
+'readObject(Ljava/io/ObjectInputStream;)<java.lang.Throwable#readObject(Ljava/io/ObjectInputStream;)VM
+<init>(Ljava/lang/String;)/java.lang.Throwable#<init>(Ljava/lang/String;)VT
+getLocalizedMessage();java.lang.Throwable#getLocalizedMessage()Ljava/lang/String;e
+&printStackTrace(Ljava/io/PrintWriter;);java.lang.Throwable#printStackTrace(Ljava/io/PrintWriter;)VZ
+getOurStackTrace()Djava.lang.Throwable#getOurStackTrace()[Ljava/lang/StackTraceElement;>
+
+toString()0java.lang.Throwable#toString()Ljava/lang/String;Q
+fillInStackTrace();java.lang.Throwable#fillInStackTrace()Ljava/lang/Throwable;s
+-setStackTrace([Ljava/lang/StackTraceElement;)Bjava.lang.Throwable#setStackTrace([Ljava/lang/StackTraceElement;)Va
+$addSuppressed(Ljava/lang/Throwable;)9java.lang.Throwable#addSuppressed(Ljava/lang/Throwable;)Vç
+:printStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;)Ojava.lang.Throwable#printStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;)Vm
+ initCause(Ljava/lang/Throwable;)Ijava.lang.Throwable#initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;T
+getStackTrace()Ajava.lang.Throwable#getStackTrace()[Ljava/lang/StackTraceElement;A
+
+getCause()3java.lang.Throwable#getCause()Ljava/lang/Throwable;e
+&printStackTrace(Ljava/io/PrintStream;);java.lang.Throwable#printStackTrace(Ljava/io/PrintStream;)V{
+1<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)Fjava.lang.Throwable#<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)VS
+fillInStackTrace(I)<java.lang.Throwable#fillInStackTrace(I)Ljava/lang/Throwable;S
+<init>(Ljava/lang/Throwable;)2java.lang.Throwable#<init>(Ljava/lang/Throwable;)Vk
+)writeObject(Ljava/io/ObjectOutputStream;)>java.lang.Throwable#writeObject(Ljava/io/ObjectOutputStream;)VL
+getSuppressed()9java.lang.Throwable#getSuppressed()[Ljava/lang/Throwable;Ô
+java.lang.Exceptionjava.lang.Throwable)
+<init>()java.lang.Exception#<init>()VM
+<init>(Ljava/lang/String;)/java.lang.Exception#<init>(Ljava/lang/String;)Vw
+/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.lang.Exception#<init>(Ljava/lang/String;Ljava/lang/Throwable;)V{
+1<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)Fjava.lang.Exception#<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)VS
+<init>(Ljava/lang/Throwable;)2java.lang.Exception#<init>(Ljava/lang/Throwable;)Vá
+finalexam.TooManyExceptionjava.lang.ExceptionT
+<init>(Ljava/lang/String;)6finalexam.TooManyException#<init>(Ljava/lang/String;)V#
+finalexam.Piezajava.lang.Objectç
+finalexam.PiezaAfinalexam.Piezajava.lang.Object&
+<init>()finalexam.PiezaA#<init>()V.
+creacion(C)finalexam.PiezaA#creacion(C)[[Iç
+finalexam.PiezaFfinalexam.Piezajava.lang.Object&
+<init>()finalexam.PiezaF#<init>()V.
+creacion(C)finalexam.PiezaF#creacion(C)[[Iç
+finalexam.PiezaHfinalexam.Piezajava.lang.Object&
+<init>()finalexam.PiezaH#<init>()V.
+creacion(C)finalexam.PiezaH#creacion(C)[[Iç
+finalexam.PiezaCfinalexam.Piezajava.lang.Object&
+<init>()finalexam.PiezaC#<init>()V.
+creacion(C)finalexam.PiezaC#creacion(C)[[Iç
+finalexam.PiezaBfinalexam.Piezajava.lang.Object&
+<init>()finalexam.PiezaB#<init>()V.
+creacion(C)finalexam.PiezaB#creacion(C)[[Iâ
+finalexam.Tablerojava.lang.Object'
+<init>()finalexam.Tablero#<init>()VG
+fijarPiezaEnTablero([[I)+finalexam.Tablero#fijarPiezaEnTablero([[I)Z9
+creacionTablero()$finalexam.Tablero#creacionTablero()VI
+main([Ljava/lang/String;),finalexam.Tablero#main([Ljava/lang/String;)V1
+posicionar(C) finalexam.Tablero#posicionar(C)Z7
+mostrarTablero()#finalexam.Tablero#mostrarTablero()Z‘
 java.util.Randomjava.lang.Objectjava.io.Serializable>
 internalNextLong(JJ)&java.util.Random#internalNextLong(JJ)J$
 next(I)java.util.Random#next(I)I.
@@ -293,54 +333,16 @@ iterator()2java.util.ArrayList#iterator()Ljava/util/Iterator;I
 spliterator()8java.util.ArrayList#spliterator()Ljava/util/Spliterator;1
 isClear([JI)!java.util.ArrayList#isClear([JI)Zk
 )writeObject(Ljava/io/ObjectOutputStream;)>java.util.ArrayList#writeObject(Ljava/io/ObjectOutputStream;)V%
-size()java.util.ArrayList#size()Ie
-PiezaBjava.lang.ObjectPieza
-<init>()PiezaB#<init>()V$
-creacion(C)PiezaB#creacion(C)[[Ie
-PiezaDjava.lang.ObjectPieza
-<init>()PiezaD#<init>()V$
-creacion(C)PiezaD#creacion(C)[[Ie
-PiezaEjava.lang.ObjectPieza
-<init>()PiezaE#<init>()V$
-creacion(C)PiezaE#creacion(C)[[Ie
-PiezaHjava.lang.ObjectPieza
-<init>()PiezaH#<init>()V$
-creacion(C)PiezaH#creacion(C)[[Iõ
-java.lang.Throwablejava.lang.Objectjava.io.Serializable;
-printStackTrace()&java.lang.Throwable#printStackTrace()V}
-2validateSuppressedExceptionsList(Ljava/util/List;)Gjava.lang.Throwable#validateSuppressedExceptionsList(Ljava/util/List;)I¡
-ìprintEnclosedStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;[Ljava/lang/StackTraceElement;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)®java.lang.Throwable#printEnclosedStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;[Ljava/lang/StackTraceElement;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)Vw
-/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.lang.Throwable#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VB
-getMessage()2java.lang.Throwable#getMessage()Ljava/lang/String;W
-setCause(Ljava/lang/Throwable;)4java.lang.Throwable#setCause(Ljava/lang/Throwable;)V)
-<init>()java.lang.Throwable#<init>()Vg
-'readObject(Ljava/io/ObjectInputStream;)<java.lang.Throwable#readObject(Ljava/io/ObjectInputStream;)VM
-<init>(Ljava/lang/String;)/java.lang.Throwable#<init>(Ljava/lang/String;)VT
-getLocalizedMessage();java.lang.Throwable#getLocalizedMessage()Ljava/lang/String;e
-&printStackTrace(Ljava/io/PrintWriter;);java.lang.Throwable#printStackTrace(Ljava/io/PrintWriter;)VZ
-getOurStackTrace()Djava.lang.Throwable#getOurStackTrace()[Ljava/lang/StackTraceElement;>
-
-toString()0java.lang.Throwable#toString()Ljava/lang/String;Q
-fillInStackTrace();java.lang.Throwable#fillInStackTrace()Ljava/lang/Throwable;s
--setStackTrace([Ljava/lang/StackTraceElement;)Bjava.lang.Throwable#setStackTrace([Ljava/lang/StackTraceElement;)Va
-$addSuppressed(Ljava/lang/Throwable;)9java.lang.Throwable#addSuppressed(Ljava/lang/Throwable;)Vç
-:printStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;)Ojava.lang.Throwable#printStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;)Vm
- initCause(Ljava/lang/Throwable;)Ijava.lang.Throwable#initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;T
-getStackTrace()Ajava.lang.Throwable#getStackTrace()[Ljava/lang/StackTraceElement;A
-
-getCause()3java.lang.Throwable#getCause()Ljava/lang/Throwable;e
-&printStackTrace(Ljava/io/PrintStream;);java.lang.Throwable#printStackTrace(Ljava/io/PrintStream;)V{
-1<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)Fjava.lang.Throwable#<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)VS
-fillInStackTrace(I)<java.lang.Throwable#fillInStackTrace(I)Ljava/lang/Throwable;S
-<init>(Ljava/lang/Throwable;)2java.lang.Throwable#<init>(Ljava/lang/Throwable;)Vk
-)writeObject(Ljava/io/ObjectOutputStream;)>java.lang.Throwable#writeObject(Ljava/io/ObjectOutputStream;)VL
-getSuppressed()9java.lang.Throwable#getSuppressed()[Ljava/lang/Throwable;Ô
-java.lang.Exceptionjava.lang.Throwable)
-<init>()java.lang.Exception#<init>()VM
-<init>(Ljava/lang/String;)/java.lang.Exception#<init>(Ljava/lang/String;)Vw
-/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.lang.Exception#<init>(Ljava/lang/String;Ljava/lang/Throwable;)V{
-1<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)Fjava.lang.Exception#<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)VS
-<init>(Ljava/lang/Throwable;)2java.lang.Exception#<init>(Ljava/lang/Throwable;)V»
+size()java.util.ArrayList#size()Iç
+finalexam.PiezaDfinalexam.Piezajava.lang.Object&
+<init>()finalexam.PiezaD#<init>()V.
+creacion(C)finalexam.PiezaD#creacion(C)[[Iç
+finalexam.PiezaEfinalexam.Piezajava.lang.Object&
+<init>()finalexam.PiezaE#<init>()V.
+creacion(C)finalexam.PiezaE#creacion(C)[[Iç
+finalexam.PiezaGfinalexam.Piezajava.lang.Object&
+<init>()finalexam.PiezaG#<init>()V.
+creacion(C)finalexam.PiezaG#creacion(C)[[I»
 java.util.Iteratorjava.lang.Objectv
 /forEachRemaining(Ljava/util/function/Consumer;)Cjava.util.Iterator#forEachRemaining(Ljava/util/function/Consumer;)V(
 remove()java.util.Iterator#remove()V+

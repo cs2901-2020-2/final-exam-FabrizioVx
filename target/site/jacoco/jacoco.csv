@@ -1,0 +1,11 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Examen_Final_Fabrizio_Vasquez,finalexam,PiezaG,0,37,0,10,0,7,0,7,0,2
+Examen_Final_Fabrizio_Vasquez,finalexam,PiezaH,0,36,0,10,0,7,0,7,0,2
+Examen_Final_Fabrizio_Vasquez,finalexam,PiezaE,0,43,0,14,0,7,0,9,0,2
+Examen_Final_Fabrizio_Vasquez,finalexam,Tablero,229,144,13,18,54,27,14,12,2,5
+Examen_Final_Fabrizio_Vasquez,finalexam,PiezaF,0,43,0,14,0,7,0,9,0,2
+Examen_Final_Fabrizio_Vasquez,finalexam,PiezaC,0,43,0,16,0,7,0,10,0,2
+Examen_Final_Fabrizio_Vasquez,finalexam,PiezaD,0,31,0,6,0,7,0,5,0,2
+Examen_Final_Fabrizio_Vasquez,finalexam,PiezaA,0,43,0,14,0,7,0,9,0,2
+Examen_Final_Fabrizio_Vasquez,finalexam,PiezaB,0,34,0,8,0,7,0,6,0,2
+Examen_Final_Fabrizio_Vasquez,finalexam,TooManyException,4,0,0,0,2,0,1,0,1,0

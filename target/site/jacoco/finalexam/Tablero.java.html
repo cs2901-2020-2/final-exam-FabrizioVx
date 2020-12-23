@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Tablero.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Examen_Final_Fabrizio_Vasquez</a> &gt; <a href="index.source.html" class="el_package">finalexam</a> &gt; <span class="el_source">Tablero.java</span></div><h1>Tablero.java</h1><pre class="source lang-java linenums">package finalexam;
+
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class Tablero {
+    private static final int ALTO= 9;
+    private static final int ANCHO = 9;
+    private static final int LOG = 3;
+<span class="fc" id="L15">    ArrayList&lt;int[][]&gt; listaDePiezas = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L16">    int [][] table = new int[ALTO][ANCHO];</span>
+<span class="fc" id="L17">    int[][] piecita = new int [LOG][LOG];</span>
+<span class="fc" id="L18">    static final Logger logger = Logger.getLogger(Tablero.class.getName());</span>
+<span class="fc" id="L19">    private static final Scanner scan = new Scanner(System.in);</span>
+<span class="fc" id="L20">    Scanner scanner = new Scanner(System.in);</span>
+    Pieza pieza;
+<span class="fc" id="L22">    private Random rand = SecureRandom.getInstanceStrong();</span>
+<span class="fc" id="L23">    Tablero() throws NoSuchAlgorithmException {</span>
+<span class="fc" id="L24">    }</span>
+
+    public void creacionTablero(){
+<span class="nc" id="L27">        this.table = new int[ALTO][ANCHO];</span>
+<span class="nc" id="L28">        this.piecita = new int[LOG][LOG];</span>
+
+<span class="nc" id="L30">    }</span>
+
+    public boolean fijarPiezaEnTablero(int [][] piezaSinPosicionar){
+<span class="fc bfc" id="L33" title="All 2 branches covered.">        for(int i = 0 ;i &lt; 9 ; i++){</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">            for(int j = 0 ; j  &lt; 9 ; j++){</span>
+<span class="fc bfc" id="L35" title="All 4 branches covered.">                if (rand.nextInt(3) == i &amp;&amp; rand.nextInt(3) == j) {</span>
+<span class="pc bpc" id="L36" title="2 of 6 branches missed.">                    if(piezaSinPosicionar[i][j] != 0 &amp;&amp; i &lt; 3 &amp;&amp; j &lt; 3){</span>
+<span class="fc" id="L37">                        table[i][j] = piezaSinPosicionar[i][j];</span>
+                    }
+                }
+            }
+        }
+<span class="fc" id="L42">        return true;</span>
+    }
+
+    public boolean mostrarTablero(){
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        for(int i = 0 ;i &lt; ALTO ; i++){</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">            for(int j = 0 ; j  &lt; ANCHO ; j++){</span>
+<span class="pc bpc" id="L48" title="1 of 2 branches missed.">                if(table[i][j] == 0){</span>
+<span class="fc" id="L49">                    logger.info(&quot;X&quot;);</span>
+                }else{
+<span class="nc" id="L51">                    logger.info(&quot; &quot;);</span>
+                }
+            }
+<span class="fc" id="L54">            logger.info(&quot;\n&quot;);</span>
+        }
+<span class="fc" id="L56">        return true;</span>
+    }
+
+    boolean posicionar(char option) throws TooManyException {
+<span class="pc bpc" id="L60" title="8 of 9 branches missed.">        switch (option){</span>
+            case 'a':
+<span class="fc" id="L62">                pieza = new PiezaA();</span>
+<span class="fc" id="L63">                piecita = pieza.creacion(option);</span>
+<span class="fc" id="L64">                fijarPiezaEnTablero(piecita);</span>
+<span class="fc" id="L65">                listaDePiezas.add(piecita);</span>
+<span class="fc" id="L66">                return true;</span>
+            case 'b':
+<span class="nc" id="L68">                pieza = new PiezaB();</span>
+<span class="nc" id="L69">                piecita = pieza.creacion(option);</span>
+<span class="nc" id="L70">                fijarPiezaEnTablero(piecita);</span>
+<span class="nc" id="L71">                listaDePiezas.add(piecita);</span>
+<span class="nc" id="L72">                return true;</span>
+            case 'c':
+<span class="nc" id="L74">                pieza = new PiezaC();</span>
+<span class="nc" id="L75">                piecita = pieza.creacion(option);</span>
+<span class="nc" id="L76">                fijarPiezaEnTablero(piecita);</span>
+<span class="nc" id="L77">                listaDePiezas.add(piecita);</span>
+<span class="nc" id="L78">                return true;</span>
+            case 'd':
+<span class="nc" id="L80">                pieza = new PiezaD();</span>
+<span class="nc" id="L81">                piecita = pieza.creacion(option);</span>
+<span class="nc" id="L82">                fijarPiezaEnTablero(piecita);</span>
+<span class="nc" id="L83">                listaDePiezas.add(piecita);</span>
+<span class="nc" id="L84">                return true;</span>
+            case 'e':
+<span class="nc" id="L86">                pieza = new PiezaE();</span>
+<span class="nc" id="L87">                piecita = pieza.creacion(option);</span>
+<span class="nc" id="L88">                fijarPiezaEnTablero(piecita);</span>
+<span class="nc" id="L89">                listaDePiezas.add(piecita);</span>
+<span class="nc" id="L90">                return true;</span>
+            case 'f':
+<span class="nc" id="L92">                pieza = new PiezaF();</span>
+<span class="nc" id="L93">                piecita = pieza.creacion(option);</span>
+<span class="nc" id="L94">                fijarPiezaEnTablero(piecita);</span>
+<span class="nc" id="L95">                listaDePiezas.add(piecita);</span>
+<span class="nc" id="L96">                return true;</span>
+            case 'g':
+<span class="nc" id="L98">                pieza = new PiezaG();</span>
+<span class="nc" id="L99">                piecita = pieza.creacion(option);</span>
+<span class="nc" id="L100">                fijarPiezaEnTablero(piecita);</span>
+<span class="nc" id="L101">                listaDePiezas.add(piecita);</span>
+<span class="nc" id="L102">                return true;</span>
+            case 'h':
+<span class="nc" id="L104">                pieza = new PiezaH();</span>
+<span class="nc" id="L105">                piecita = pieza.creacion(option);</span>
+<span class="nc" id="L106">                fijarPiezaEnTablero(piecita);</span>
+<span class="nc" id="L107">                listaDePiezas.add(piecita);</span>
+<span class="nc" id="L108">                return true;</span>
+
+            default:
+<span class="nc" id="L111">                throw new TooManyException(&quot;ERROR EN LA OPCION&quot;);</span>
+        }
+    }
+    public static void main(String[] args) throws Exception {
+<span class="nc" id="L115">        logger.info(&quot;Ingresa para jugar (digita 0) o juega de forma anónima ( digita 1)&quot;);</span>
+<span class="nc" id="L116">        int opcion = scan.nextInt();</span>
+<span class="nc" id="L117">        String nameUser = &quot;&quot;;</span>
+<span class="nc bnc" id="L118" title="All 2 branches missed.">        if(opcion == 0) {</span>
+<span class="nc" id="L119">            logger.info(&quot;Ingresa tu nombre de usuario: &quot;);</span>
+<span class="nc" id="L120">            nameUser = scan.nextLine();</span>
+        }
+<span class="nc" id="L122">        else{ nameUser = &quot;firstPlayer&quot;;}</span>
+<span class="nc" id="L123">        logger.log(Level.SEVERE,&quot;Acaba de ingresar {0} felicidades&quot;,nameUser);</span>
+<span class="nc" id="L124">        Tablero tablero = new Tablero();</span>
+<span class="nc" id="L125">        tablero.creacionTablero();</span>
+<span class="nc" id="L126">        tablero.posicionar('a');</span>
+<span class="nc" id="L127">        tablero.posicionar('b');</span>
+<span class="nc" id="L128">        tablero.mostrarTablero();</span>
+
+<span class="nc" id="L130">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
