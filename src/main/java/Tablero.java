@@ -74,7 +74,7 @@ public class Tablero {
                 throw new Exception("ERROR EN LA OPCION");
         }
     }
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         logger.info("Ingresa para jugar (digita 0) o juega de forma anónima ( digita 1)");
         int opcion = scan.nextInt();
         String nameUser = "";
@@ -83,6 +83,12 @@ public class Tablero {
             nameUser = scan.nextLine();
         }
         else{ nameUser = "firstPlayer";}
-        logger.info("Acaba de ingresar" + nameUser +" felicidades");
+        logger.info("Acaba de ingresar " + nameUser +" felicidades");
+        Tablero tablero = new Tablero();
+        tablero.creacionTablero();
+        tablero.posicionar('a');
+        tablero.posicionar('b');
+        tablero.mostrarTablero();
+
     }
 }
