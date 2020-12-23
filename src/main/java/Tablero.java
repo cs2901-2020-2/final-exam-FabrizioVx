@@ -1,5 +1,7 @@
 //extends PiezaA,PiezaB,PiezaC,PiezaD,PiezaE,PiezaF,PiezaG,PiezaH
 
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -16,8 +18,8 @@ public class Tablero {
     private static final Scanner scan = new Scanner(System.in);
     Scanner scanner = new Scanner(System.in);
     Pieza pieza;
-
-    Tablero(){
+    private Random rand = SecureRandom.getInstanceStrong();
+    Tablero() throws NoSuchAlgorithmException {
     }
 
     public void creacionTablero(){
@@ -27,7 +29,6 @@ public class Tablero {
     }
 
     public boolean fijarPiezaEnTablero(int [][] piezaSinPosicionar){
-        Random rand = new Random();
         for(int i = 0 ;i < 9 ; i++){
             for(int j = 0 ; j  < 9 ; j++){
                 if (rand.nextInt(3) == i && rand.nextInt(3) == j) {

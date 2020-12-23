@@ -1,25 +1,73 @@
 
-PiezaE#creacion(C)[[It
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java ("4"1*š
-4t
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java (–
-“
-t
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java (
-%0int[][]"__id*
+Tablero#mostrarTablero()ZH
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java, ,(!"10*£
+3H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java5 5(z
+x
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java5 5(
+%6java.util.logging.Logger"__id*
+""ÑÎ
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java5 5(
+
+%7void"2java.util.logging.Logger#info(Ljava/lang/String;)V* 
+
+%6java.util.logging.Logger*
+\n2info(Ljava/lang/String;)*
+10*¡
+5H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java2 2(z
+x
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java2 2(
+%4java.util.logging.Logger"__id*
+""ÐÍ
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java2 2($
+
+%5void"2java.util.logging.Logger#info(Ljava/lang/String;)V* 
+
+%4java.util.logging.Logger*
+ 2info(Ljava/lang/String;)*
+8*¡
+6H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java0 0(z
+x
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java0 0(
+%2java.util.logging.Logger"__id*
+""ÐÍ
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java0 0($
+
+%3void"2java.util.logging.Logger#info(Ljava/lang/String;)V* 
+
+%2java.util.logging.Logger*
+X2info(Ljava/lang/String;)*
+8*¿
+8H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java. .(e
+c
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java.! .(&	
+%1int"__id*
+""*	
+3
+5
+6*½
+10H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java- -(e
+c
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java- -(	
+%0int"__id*
 ""*
-4
-1*’
-1t
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java (–
-“
-t
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java (
-%1int[][]"__id*
-"""~
-t
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaE.java (
-"":
-""B
-
-PiezaE
+8
+1*¡
+1H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java7 7("R
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java7 7(
+""B	
+Tablero

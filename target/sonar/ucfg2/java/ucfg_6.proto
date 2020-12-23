@@ -1,25 +1,43 @@
 
-PiezaB#creacion(C)[[It
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaB.java ("4"1*š
-4t
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaB.java (–
-“
-t
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaB.java (
-%0int[][]"__id*
-""*
-4
-1*’
-1t
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaB.java (–
-“
-t
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaB.java (
-%1int[][]"__id*
-"""~
-t
-j/Users/Fabrizio/Downloads/CICLO6/IngeneriadeSoftwareI/proyecto/backend/finalTerm/src/main/java/PiezaB.java (
+!Tablero#fijarPiezaEnTablero([[I)ZH
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java (&"9"1*þ
+8H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java", "(0
+
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java", "(0
+%2java.util.Random"__id**	
+Tablero"
+rand¢Ÿ
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java", "(;	
+%3int"java.util.Random#nextInt(I)I*
+
+%2java.util.Random*22
+nextInt(I)*
+9
+1*
+9H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java" "(
+
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java" "(
+%0java.util.Random"__id**	
+Tablero"
+rand¢Ÿ
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java" "(#	
+%1int"java.util.Random#nextInt(I)I*
+
+%0java.util.Random*22
+nextInt(I)*	
+8
+9
+1*¡
+1H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java) )("R
+H
+>/Users/Fabrizio/Downloads/finalTerm/src/main/java/Tablero.java) )(
 "":
-""B
-
-PiezaB
+""B	
+Tablero
