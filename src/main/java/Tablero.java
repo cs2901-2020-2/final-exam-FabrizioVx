@@ -15,21 +15,23 @@ public class Tablero {
     static final Logger logger = Logger.getLogger(Tablero.class.getName());
     private static final Scanner scan = new Scanner(System.in);
     Scanner scanner = new Scanner(System.in);
-
     Pieza pieza;
 
-    public boolean creacionTablero(){
+    Tablero(){
+    }
+
+    public void creacionTablero(){
         this.tablero = new int[ALTO][ANCHO];
         this.AuxPieza = new int[LOG][LOG];
-        return true;
+
     }
 
     public boolean fijarPiezaEnTablero(int [][] piezaSinPosicionar){
         Random rand = new Random();
         for(int i = 0 ;i < 9 ; i++){
             for(int j = 0 ; j  < 9 ; j++){
-                if (rand.nextInt(8) == i && rand.nextInt(8) == j) {
-                    if(piezaSinPosicionar[i][j] != 0){
+                if (rand.nextInt(3) == i && rand.nextInt(3) == j) {
+                    if(piezaSinPosicionar[i][j] != 0 && i < 3 && j < 3){
                         tablero[i][j] = piezaSinPosicionar[i][j];
                     }
                 }
@@ -38,7 +40,7 @@ public class Tablero {
         return true;
     }
 
-    private void mostrarTablero(){
+    public boolean mostrarTablero(){
         for(int i = 0 ;i < ALTO ; i++){
             for(int j = 0 ; j  < ANCHO ; j++){
                 if(tablero[i][j] == 0){
@@ -49,22 +51,55 @@ public class Tablero {
             }
             logger.info("\n");
         }
+        return true;
     }
 
     boolean posicionar(char option) throws Exception {
         switch (option){
             case 'a':
+                pieza = new PiezaA();
+                AuxPieza = pieza.creacion(option);
+                fijarPiezaEnTablero(AuxPieza);
+                listaDePiezas.add(AuxPieza);
+                return true;
             case 'b':
+                pieza = new PiezaB();
+                AuxPieza = pieza.creacion(option);
+                fijarPiezaEnTablero(AuxPieza);
+                listaDePiezas.add(AuxPieza);
+                return true;
             case 'c':
+                pieza = new PiezaC();
+                AuxPieza = pieza.creacion(option);
+                fijarPiezaEnTablero(AuxPieza);
+                listaDePiezas.add(AuxPieza);
+                return true;
             case 'd':
-
+                pieza = new PiezaD();
+                AuxPieza = pieza.creacion(option);
+                fijarPiezaEnTablero(AuxPieza);
+                listaDePiezas.add(AuxPieza);
+                return true;
             case 'e':
-
+                pieza = new PiezaE();
+                AuxPieza = pieza.creacion(option);
+                fijarPiezaEnTablero(AuxPieza);
+                listaDePiezas.add(AuxPieza);
+                return true;
             case 'f':
-
+                pieza = new PiezaF();
+                AuxPieza = pieza.creacion(option);
+                fijarPiezaEnTablero(AuxPieza);
+                listaDePiezas.add(AuxPieza);
+                return true;
             case 'g':
-
+                pieza = new PiezaG();
+                AuxPieza = pieza.creacion(option);
+                fijarPiezaEnTablero(AuxPieza);
+                listaDePiezas.add(AuxPieza);
+                return true;
             case 'h':
+                pieza = new PiezaH();
                 AuxPieza = pieza.creacion(option);
                 fijarPiezaEnTablero(AuxPieza);
                 listaDePiezas.add(AuxPieza);

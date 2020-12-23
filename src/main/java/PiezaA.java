@@ -1,5 +1,5 @@
 public class PiezaA implements Pieza{
-    PiezaA() {}
+    //PiezaA() {}
     @Override
     public int[][] creacion(char option) {
         //piecita = {{1,0,0},{1,0,0},{1,1,1}};
